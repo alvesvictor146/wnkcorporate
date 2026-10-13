@@ -1,0 +1,7 @@
+# Editor e SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+powershell.cmd
+*.log

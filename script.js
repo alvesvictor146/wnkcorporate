@@ -20,6 +20,7 @@ const translations = {
     "nav.clients": "Parceiros",
     "nav.compliance": "Compliance",
     "nav.contact": "Contato",
+    "nav.leadership": "Liderança",
     "nav.cta": "Fale Conosco",
 
     // Hero
@@ -36,14 +37,18 @@ const translations = {
     "manifesto.label": "Posicionamento Estratégico",
     "manifesto.quote": "“A WNK Corporate é a conexão direta que leva você aos melhores negócios do mercado imobiliário.”",
     "manifesto.desc": "Sua parceira estratégica no mundo dos negócios corporativos. Atuamos com agilidade e máxima eficiência, conectando dos grandes players institucionais aos microempreendedores em múltiplos setores: corporativo, varejo, atacado e agronegócio.",
-    "stat.companies": "+100",
-    "stat.companies_lbl": "Empresas atendidas e parceiros",
-    "stat.assets": "30+",
-    "stat.assets_lbl": "Segmentos de ativos comercializados",
-    "stat.countries": "8+",
-    "stat.countries_lbl": "Países com negócios e investimentos",
-    "stat.contracts": "10+10",
-    "stat.contracts_lbl": "Anos em contratos estruturados BTS",
+    "stat.stores": "+100",
+    "stat.stores_lbl": "Lojas vendidas",
+    "stat.bts": "+80",
+    "stat.bts_lbl": "Estruturação de BTS",
+    "stat.cities": "+40",
+    "stat.cities_lbl": "Cidades com vendas de ativos",
+    "stat.m2_sold": "+2 mi",
+    "stat.m2_sold_lbl": "m² comercializados",
+    "stat.m2_leased": "+1 mi",
+    "stat.m2_leased_lbl": "m² locados",
+    "stat.slb": "+500 mil",
+    "stat.slb_lbl": "Sale and Leaseback",
 
     // Serviços
     "services.label": "Expertise Multidisciplinar",
@@ -95,8 +100,13 @@ const translations = {
     "assets.label": "Portfólio Abrangente",
     "assets.title": "Segmentos de Ativos Comercializados",
     "assets.subtitle": "Dos grandes complexos industriais ao varejo capilarizado, atendemos demandas sob medida em mais de 30 categorias patrimoniais.",
-    "assets.tab_retail": "Varejo & Retail (16)",
-    "assets.tab_invest": "Investimentos & Large Scale (14)",
+    "assets.choose_segment": "Escolha o segmento:",
+    "segment.lajes": "Lajes Corporativas",
+    "segment.logistico": "Logístico",
+    "segment.renda_urbana": "Renda Urbana",
+    "segment.agro": "Agro",
+    "segment.shopping": "Shopping",
+    "segment.residencial": "Residencial e Residencial Estudantil",
 
     // Exterior
     "global.label": "Presença Internacional",
@@ -146,14 +156,16 @@ const translations = {
     "clients.mosaic_cta": "Clique para ampliar o mosaico oficial de clientes",
 
     // Liderança
-    "lead.label": "Direção Técnica",
+    "lead.label": "Direção Executiva & Novos Negócios",
     "lead.title": "Liderança com Visão Multidisciplinar",
-    "lead.name": "Rodrigo Papp Lopes",
-    "lead.roles": "Corretor de Imóveis & Arquiteto Urbanista",
-    "lead.bio": "Profissional que une no mesmo ecossistema a visão técnica e espacial da Arquitetura com a assertividade da Corretagem Corporativa e a inteligência das Operações Financeiras de M&A. Especialista em conduzir negociações complexas com os principais players do Brasil e exterior.",
+    "lead.name": "Rodrigo P. Lopes",
+    "lead.roles": "Sócio-Proprietário | Head de Novos Negócios | Estruturação de Negócios, Finanças & M&A",
+    "lead.bio1": "Com mais de duas décadas de trajetória executiva, atua na liderança das frentes Comercial, Administrativa e de Gestão de Projetos. À frente da unidade de Novos Negócios da WNK Corporate, conduz estudos de viabilidade mercadológica, prospecção e avaliação estratégica de oportunidades de investimento e fusões & aquisições (M&A).",
+    "lead.bio2": "É Arquiteto e Designer de Interiores, com especialização em Gestão de Projetos pela Universidade Paulista (UNIP).",
     "lead.creci": "CRECI: 63.893-F",
     "lead.cau": "CAU: A136977-6",
     "lead.crea": "CREA: 260562967-8",
+    "lead.unip": "Gestão de Projetos • UNIP",
 
     // Contato
     "contact.label": "Atendimento Direto",
@@ -208,6 +220,7 @@ const translations = {
     "nav.clients": "Partners",
     "nav.compliance": "Compliance",
     "nav.contact": "Contact",
+    "nav.leadership": "Leadership",
     "nav.cta": "Contact Us",
 
     // Hero
@@ -224,14 +237,18 @@ const translations = {
     "manifesto.label": "Strategic Positioning",
     "manifesto.quote": "“WNK Corporate is the direct connection leading you to the highest value real estate opportunities.”",
     "manifesto.desc": "Your strategic partner in commercial real estate. Operating with agile execution and institutional rigor, connecting major corporate players and entrepreneurs across corporate, retail, wholesale, and agribusiness sectors.",
-    "stat.companies": "+100",
-    "stat.companies_lbl": "Corporate clients and partners",
-    "stat.assets": "30+",
-    "stat.assets_lbl": "Commercial asset categories",
-    "stat.countries": "8+",
-    "stat.countries_lbl": "Countries with active operations",
-    "stat.contracts": "10+10",
-    "stat.contracts_lbl": "Years structured BTS contracts",
+    "stat.stores": "+100",
+    "stat.stores_lbl": "Retail Stores Sold",
+    "stat.bts": "+80",
+    "stat.bts_lbl": "BTS Projects Structured",
+    "stat.cities": "+40",
+    "stat.cities_lbl": "Cities with Asset Sales",
+    "stat.m2_sold": "+2M",
+    "stat.m2_sold_lbl": "Sq. Meters Marketed",
+    "stat.m2_leased": "+1M",
+    "stat.m2_leased_lbl": "Sq. Meters Leased",
+    "stat.slb": "+500k",
+    "stat.slb_lbl": "Sale & Leaseback",
 
     // Serviços
     "services.label": "Multidisciplinary Expertise",
@@ -283,8 +300,13 @@ const translations = {
     "assets.label": "Comprehensive Portfolio",
     "assets.title": "Asset Classes Commercialized",
     "assets.subtitle": "From mega-logistics campuses to prime high-street retail, handling institutional mandates across over 30 asset categories.",
-    "assets.tab_retail": "Retail & Commercial (16)",
-    "assets.tab_invest": "Investments & Large Scale (14)",
+    "assets.choose_segment": "Select Asset Class:",
+    "segment.lajes": "Corporate Offices",
+    "segment.logistico": "Logistics & Industrial",
+    "segment.renda_urbana": "Urban Retail & Yield",
+    "segment.agro": "Agribusiness",
+    "segment.shopping": "Shopping",
+    "segment.residencial": "Residential & Student Housing",
 
     // Exterior
     "global.label": "Global Reach",
@@ -334,14 +356,16 @@ const translations = {
     "clients.mosaic_cta": "Click to expand the official corporate client mosaic",
 
     // Liderança
-    "lead.label": "Technical Direction",
-    "lead.title": "Leadership with Multidisciplinary Vision",
-    "lead.name": "Rodrigo Papp Lopes",
-    "lead.roles": "Licensed Real Estate Broker & Architect",
-    "lead.bio": "A seasoned executive bridging the spatial and aesthetic precision of Architecture with commercial corporate brokerage and sophisticated M&A financial engineering. Leading high-stakes negotiations across Brazil and overseas.",
+    "lead.label": "Executive Leadership & New Business",
+    "lead.title": "Multidisciplinary Leadership",
+    "lead.name": "Rodrigo P. Lopes",
+    "lead.roles": "Partner-Owner | Head of New Business | Business Structuring, Finance & M&A",
+    "lead.bio1": "With over two decades of executive experience, he leads Commercial, Administrative, and Project Management operations. Heading the New Business unit at WNK Corporate, he oversees market feasibility analyses, origination, and strategic valuation of investment opportunities and mergers & acquisitions (M&A).",
+    "lead.bio2": "Architect and Interior Designer, with a specialization in Project Management from Universidade Paulista (UNIP).",
     "lead.creci": "CRECI: 63.893-F",
     "lead.cau": "CAU: A136977-6",
     "lead.crea": "CREA: 260562967-8",
+    "lead.unip": "Project Management • UNIP",
 
     // Contato
     "contact.label": "Direct Advisory",
@@ -386,42 +410,58 @@ const translations = {
 };
 
 // ==========================================================================
-// 2. DADOS DOS SEGMENTOS DE ATIVOS (VAREJO & INVESTIMENTOS)
+// 2. DADOS DOS SEGMENTOS DE ATIVOS (6 CATEGORIAS OFICIAIS)
 // ==========================================================================
 const assetsData = {
-  varejo: [
-    { icon: "warehouse", pt: "Centros de Distribuição", en: "Distribution Centers" },
-    { icon: "waves", pt: "Parques Aquáticos", en: "Water Parks" },
-    { icon: "hotel", pt: "Hotéis & Resorts", en: "Hotels & Resorts" },
-    { icon: "bed", pt: "Motéis", en: "Motels" },
-    { icon: "palmtree", pt: "Pousadas", en: "Inns & Lodges" },
-    { icon: "sparkles", pt: "Ilhas & Spas", en: "Islands & Spas" },
-    { icon: "store", pt: "Lojas & Franquias", en: "Shops & Franchises" },
-    { icon: "home", pt: "Casas em Condomínios Fechados", en: "Gated Community Villas" },
-    { icon: "fuel", pt: "Postos de Combustível", en: "Gas Stations" },
-    { icon: "building", pt: "Apartamentos & Lançamentos", en: "Luxury Condos & Launches" },
-    { icon: "pill", pt: "Drogarias & Redes de Saúde", en: "Pharmacies & Health Chains" },
-    { icon: "shopping-bag", pt: "Strip Centers & Power Centers", en: "Strip Centers & Power Centers" },
-    { icon: "briefcase", pt: "Salas e Lajes Comerciais", en: "Corporate Office Floors" },
-    { icon: "trending-up", pt: "Imóveis com Renda Ativa", en: "Income-Generating Properties" },
-    { icon: "wheat", pt: "Agronegócio, Fazendas & Haras", en: "Agribusiness, Farms & Studs" },
-    { icon: "car", pt: "Estacionamentos Comerciais", en: "Commercial Parking Lots" }
+  lajes: [
+    { icon: "building-2", pt: "Lajes Corporativas Triple A (AAA)", en: "Triple-A Corporate Office Floors", descPt: "Andares em edifícios de altíssimo padrão nos principais eixos econômicos.", descEn: "High-spec corporate floors in premier financial districts." },
+    { icon: "briefcase", pt: "Edifícios Corporativos Monousuário", en: "Single-Tenant Corporate HQs", descPt: "Sedes institucionais completas para grandes corporações e multinacionais.", descEn: "Dedicated corporate headquarters and standalone towers." },
+    { icon: "building", pt: "Salas Comerciais & Andares Corridos", en: "Executive Suites & Open Space", descPt: "Módulos flexíveis para consultorias, escritórios e empresas de tecnologia.", descEn: "Flexible floorplates for consultancies, tech firms and law offices." },
+    { icon: "landmark", pt: "Complexos Financeiros & Centros de Negócios", en: "Financial Complexes & Business Centers", descPt: "Ativos estratégicos integrados a redes bancárias e centros de convenções.", descEn: "Prime assets adjacent to financial districts and corporate services." },
+    { icon: "briefcase", pt: "Retrofit de Espaços Corporativos", en: "Corporate Retrofit & Modernization", descPt: "Requalificação completa de edifícios consolidados para novos padrões ESG.", descEn: "Comprehensive upgrades of corporate towers to modern ESG standards." },
+    { icon: "building-2", pt: "Sedes Administrativas Sob Medida (BTS)", en: "Tailored Corporate BTS HQs", descPt: "Estruturação sob demanda com contratos atípicos de longo prazo (10 a 20 anos).", descEn: "Custom-built corporate headquarters under long-term leases." }
   ],
-  investimentos: [
-    { icon: "zap", pt: "PCHs & Usinas Hidrelétricas", en: "Small Hydro Plants & Energy" },
-    { icon: "cross", pt: "Complexos Hospitalares", en: "Hospitals & Medical Centers" },
-    { icon: "hammer", pt: "Operações BTS (Build to Suit)", en: "Build to Suit (BTS) Projects" },
-    { icon: "container", pt: "Portos Secos & Aduanas", en: "Dry Ports & Customs Depots" },
-    { icon: "graduation-cap", pt: "Faculdades & Universidades", en: "Universities & Colleges" },
-    { icon: "book-open", pt: "Colégios & Escolas Bilíngues", en: "Schools & Educational Hubs" },
-    { icon: "shopping-cart", pt: "Shopping Centers", en: "Shopping Malls" },
-    { icon: "anchor", pt: "Portos Marítimos & Estaleiros", en: "Sea Ports & Shipyards" },
-    { icon: "landmark", pt: "Agências Bancárias Corporativas", en: "Bank Branches & Financial Hubs" },
-    { icon: "building-2", pt: "Prédios Comerciais Inteiros", en: "Commercial Towers" },
-    { icon: "boxes", pt: "Condomínios de Galpões Logísticos", en: "Logistics Warehouse Parks" },
-    { icon: "map-pin", pt: "Áreas Estruturadas p/ Incorporação", en: "Development Land Banks" },
-    { icon: "plane", pt: "Aeroportos & Hangares", en: "Airports & Private Hangars" },
-    { icon: "factory", pt: "Galpões e Plantas Industriais", en: "Industrial Manufacturing Plants" }
+  logistico: [
+    { icon: "boxes", pt: "Condomínios de Galpões Logísticos", en: "Logistics Warehouse Parks", descPt: "Módulos com pé-direito livre de 12m e alta capacidade de piso (6 ton/m²).", descEn: "Class-A parks with 12m clear height and 6 ton/sqm floor load." },
+    { icon: "warehouse", pt: "Centros de Distribuição (CD)", en: "Distribution Centers (CD)", descPt: "Plataformas logísticas para redes de varejo, atacado e comércio eletrônico.", descEn: "Large logistics hubs for e-commerce, retail and wholesale operators." },
+    { icon: "boxes", pt: "Galpões Last Mile e Cross-Docking", en: "Last Mile & Cross-Docking Hubs", descPt: "Operações ágeis posicionadas no anel viário das grandes capitais brasileiras.", descEn: "Strategic suburban hubs enabling rapid same-day urban deliveries." },
+    { icon: "warehouse", pt: "Portos Secos & Zonas Aduaneiras", en: "Dry Ports & Customs Depots", descPt: "Estruturas alfandegadas e pátios intermodais para importação e exportação.", descEn: "Bonded facilities and intermodal transport terminals." },
+    { icon: "boxes", pt: "Câmaras Frias & Galpões Climatizados", en: "Cold Storage & Refrigerated Facilities", descPt: "Instalações especializadas para indústria farmacêutica, vacinas e perecíveis.", descEn: "Temperature-controlled facilities for pharmaceutical and food logistics." },
+    { icon: "warehouse", pt: "Plantas Industriais & BTS Especializado", en: "Industrial Manufacturing Plants & BTS", descPt: "Instalações fabris de alta complexidade desenvolvidas sob medida.", descEn: "Specialized industrial facilities built to tenant specifications." }
+  ],
+  renda_urbana: [
+    { icon: "trending-up", pt: "Imóveis de Varejo com Renda Ativa (Yield)", en: "Yield-Generating Retail Assets", descPt: "Ativos locados para operadores de primeira linha com fluxos de dividendos estáveis.", descEn: "Properties leased to blue-chip tenants with predictable dividend cashflows." },
+    { icon: "shopping-bag", pt: "Supermercados & Atacarejos de Grande Porte", en: "Big Box Supermarkets & Cash & Carry", descPt: "Lojas âncora operadas pelas maiores redes atacadistas e supermercadistas.", descEn: "Anchor stores leased to major national retail and cash & carry chains." },
+    { icon: "store", pt: "Drogarias & Farmácias de Rede", en: "Pharmacies & Retail Health Hubs", descPt: "Pontos de esquina de altíssimo fluxo nas capitais e cidades polo.", descEn: "High-traffic corner retail units tenanted by national pharmacy chains." },
+    { icon: "landmark", pt: "Agências Bancárias Corporativas", en: "Bank Branches & Financial Hubs", descPt: "Imóveis locados para bancos institucionais com contratos de longo prazo.", descEn: "Institutional bank branches backed by investment-grade tenants." },
+    { icon: "store", pt: "Postos de Combustíveis & Conveniência", en: "Gas Stations & Convenience Strips", descPt: "Empreendimentos em rodovias e avenidas principais com bandeiras consagradas.", descEn: "Prime petrol stations with convenience retail on major highways." },
+    { icon: "building", pt: "Complexos Hospitalares & Clínicas Integradas", en: "Hospitals & Medical Clinics", descPt: "Infraestruturas de saúde especializadas para grupos médicos e operadoras.", descEn: "Healthcare infrastructure tenanted by leading hospital networks." },
+    { icon: "briefcase", pt: "Colégios & Campi Universitários", en: "Colleges & University Campuses", descPt: "Ativos educacionais com locatários de relevância e contratos atípicos.", descEn: "Educational campuses tenanted by reputable educational groups." },
+    { icon: "trending-up", pt: "Operações de Sale & Leaseback Urbano", en: "Urban Sale & Leaseback Transactions", descPt: "Desmobilização patrimonial estratégica para otimizar o capital de giro.", descEn: "Monetizing corporate real estate to unlock operational working capital." }
+  ],
+  agro: [
+    { icon: "wheat", pt: "Fazendas de Soja, Grãos & Pecuária", en: "Soy, Grain & Cattle Farmlands", descPt: "Propriedades produtivas com solo de alta fertilidade e histórico comprovado.", descEn: "Productive farmlands with high soil quality and proven harvest records." },
+    { icon: "warehouse", pt: "Silos & Centros de Armazenamento de Grãos", en: "Grain Storage Terminals & Silos", descPt: "Capacidade estática em polos do Centro-Oeste, Matopiba e Sul do Brasil.", descEn: "Static storage capacity across Brazil's core agricultural corridors." },
+    { icon: "boxes", pt: "Plantas Agroindustriais & Frigoríficos", en: "Agro-industrial Plants & Processing Units", descPt: "Estruturas habilitadas para abate, processamento e exportação global.", descEn: "Processing facilities certified for international food export markets." },
+    { icon: "trending-up", pt: "Usinas de Bioenergia & Etanol", en: "Bioenergy & Ethanol Facilities", descPt: "Ativos de cogeração de energia a biomassa e destilarias de cana e milho.", descEn: "Biomass cogeneration assets and corn/cane ethanol distilleries." },
+    { icon: "wheat", pt: "Terras Produtivas e Imóveis Rurais Estruturados", en: "Prime Productive Land Banks", descPt: "Regularização fundiária, CAR e conformidade ambiental rigorosa.", descEn: "Structured rural assets with complete registry and environmental compliance." },
+    { icon: "wheat", pt: "Haras de Elite & Centros Equestres", en: "Elite Stud Farms & Equestrian Centers", descPt: "Infraestrutura de ponta para criação, treinamento e reprodução de cavalos de raça.", descEn: "State-of-the-art infrastructure for elite horse breeding and training." }
+  ],
+  shopping: [
+    { icon: "shopping-cart", pt: "Shopping Centers Regionais & Malls", en: "Regional Shopping Centers & Malls", descPt: "Centros de compras dominantes com mix qualificado de lazer e gastronomia.", descEn: "Dominant retail malls featuring entertainment, dining and national anchors." },
+    { icon: "store", pt: "Power Centers & Strip Malls de Conveniência", en: "Power Centers & Neighborhood Strip Malls", descPt: "Formatos abertos de compras rápidas com estacionamento frontal e baixo condomínio.", descEn: "Open-air convenience formats with dedicated parking and low condo fees." },
+    { icon: "shopping-bag", pt: "Lojas Âncora e Mega Stores", en: "Anchor Stores & Mega Stores", descPt: "Espaços amplos locados para grandes magazines, livrarias e academias.", descEn: "Large retail premises tenanted by departmental chains and fitness centers." },
+    { icon: "store", pt: "Galerias Comerciais & Calçadões Urbanos", en: "Commercial Galleries & Shopping Arcades", descPt: "Pontos comerciais densamente povoados com alta conversão diária.", descEn: "Dense footfall shopping arcades with high retail sales conversion." },
+    { icon: "shopping-cart", pt: "Outlets de Desconto & Varejo Promocional", en: "Outlet Malls & Off-Price Retail", descPt: "Empreendimentos em rodovias de acesso com público regional consumidor.", descEn: "Destination highway outlets offering off-price retail shopping." },
+    { icon: "store", pt: "Parques Temáticos & Centros de Lazer Integrados", en: "Theme Parks & Integrated Leisure Hubs", descPt: "Destinos turísticos com atrações familiares, cinemas e áreas gastronômicas.", descEn: "Entertainment and tourist centers featuring cinemas and family attractions." }
+  ],
+  residencial: [
+    { icon: "users", pt: "Empreendimentos Multifamily (Renda Residencial)", en: "Multifamily Residential Yield", descPt: "Edifícios residenciais inteiros desenvolvidos para locação com gestão profissional.", descEn: "Entire residential towers designed for professionally managed rental yield." },
+    { icon: "users", pt: "Student Housing (Residencial Estudantil)", en: "Student Housing & Co-living", descPt: "Moradias inteligentes projetadas nas proximidades dos maiores polos universitários.", descEn: "Modern purpose-built student accommodations near top university campuses." },
+    { icon: "building", pt: "Apartamentos & Condomínios de Alto Padrão", en: "Luxury High-Rise Condominiums", descPt: "Unidades residenciais nos bairros mais nobres com arquitetura autoral.", descEn: "High-end residential developments in prime metropolitan locations." },
+    { icon: "home", pt: "Casas em Condomínios Fechados Exclusivos", en: "Gated Community Villas & Mansions", descPt: "Residências de altíssimo padrão com segurança perimetral e lazer completo.", descEn: "Luxury villas in gated communities with 24/7 security and resort amenities." },
+    { icon: "home", pt: "Loteamentos e Terrenos para Incorporação", en: "Residential Land Banking & Subdivisions", descPt: "Glebas estruturadas com viabilidade técnica para incorporadoras.", descEn: "Approved master-planned land parcels for residential development." },
+    { icon: "building-2", pt: "Lofts & Residências no Exterior", en: "Lofts & Prime International Residences", descPt: "Ativos nos Estados Unidos, Europa e Emirados com assessoria cambial e jurídica.", descEn: "Curated residential assets in the US, Europe and UAE with foreign advisory." }
   ]
 };
 
@@ -430,7 +470,7 @@ const assetsData = {
 // ==========================================================================
 let currentLang = localStorage.getItem("wnk_lang") || "pt";
 let currentTheme = localStorage.getItem("wnk_theme") || "dark";
-let currentAssetTab = "varejo";
+let currentAssetTab = "lajes";
 
 // ==========================================================================
 // 4. FUNÇÃO DE IDIOMA
@@ -461,6 +501,15 @@ function setLanguage(lang) {
     }
   });
 
+  // Atualizar status do botão de áudio do vídeo
+  const audioStatusText = document.getElementById("audioStatusText");
+  const video = document.getElementById("instVideo");
+  if (audioStatusText && video) {
+    audioStatusText.textContent = video.muted
+      ? (lang === "pt" ? "Ativar Áudio" : "Unmute")
+      : (lang === "pt" ? "Som Ativo" : "Sound On");
+  }
+
   // Renderizar ativos no idioma selecionado
   renderAssets();
 }
@@ -488,6 +537,34 @@ function setTheme(theme) {
 // ==========================================================================
 // 6. RENDERIZADOR DE ATIVOS
 // ==========================================================================
+function getAssetIconSvg(icon) {
+  switch (icon) {
+    case "building":
+    case "building-2":
+      return `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="9" y1="6" x2="9.01" y2="6"></line><line x1="15" y1="6" x2="15.01" y2="6"></line><line x1="9" y1="10" x2="9.01" y2="10"></line><line x1="15" y1="10" x2="15.01" y2="10"></line><line x1="9" y1="14" x2="9.01" y2="14"></line><line x1="15" y1="14" x2="15.01" y2="14"></line><line x1="9" y1="18" x2="15" y2="18"></line></svg>`;
+    case "warehouse":
+    case "boxes":
+      return `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>`;
+    case "briefcase":
+      return `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>`;
+    case "shopping-cart":
+    case "shopping-bag":
+    case "store":
+      return `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>`;
+    case "wheat":
+      return `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22s5-5 10-5 10 5 10 5"></path><path d="M12 17V2"></path><path d="M12 7c-2 0-4-1.5-4-3s2-2 4-2 4 .5 4 2-2 3-4 3z"></path><path d="M12 12c-2.5 0-5-1.5-5-3s2.5-2 5-2 5 .5 5 2-2.5 3-5 3z"></path></svg>`;
+    case "home":
+    case "users":
+      return `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>`;
+    case "trending-up":
+      return `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>`;
+    case "landmark":
+      return `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"></line><line x1="6" y1="18" x2="6" y2="11"></line><line x1="10" y1="18" x2="10" y2="11"></line><line x1="14" y1="18" x2="14" y2="11"></line><line x1="18" y1="18" x2="18" y2="11"></line><polygon points="12 2 20 7 4 7"></polygon></svg>`;
+    default:
+      return `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 6 12 12 16 14"/></svg>`;
+  }
+}
+
 function renderAssets() {
   const container = document.getElementById("assetsList");
   if (!container) return;
@@ -498,14 +575,18 @@ function renderAssets() {
   list.forEach(item => {
     const pill = document.createElement("div");
     pill.className = "asset-pill";
+    const iconSvg = getAssetIconSvg(item.icon);
+    const title = item[currentLang] || item.pt;
+    const desc = currentLang === "en" ? (item.descEn || "") : (item.descPt || "");
+
     pill.innerHTML = `
       <div class="asset-icon">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="9"/>
-          <path d="M12 8v8M8 12h8"/>
-        </svg>
+        ${iconSvg}
       </div>
-      <div class="asset-name">${item[currentLang]}</div>
+      <div class="asset-info">
+        <div class="asset-name">${title}</div>
+        ${desc ? `<div class="asset-desc">${desc}</div>` : ""}
+      </div>
     `;
     container.appendChild(pill);
   });
@@ -580,71 +661,86 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Abas de Ativos (Tabs)
-  const tabRetail = document.getElementById("tabRetail");
-  const tabInvest = document.getElementById("tabInvest");
-  if (tabRetail && tabInvest) {
-    tabRetail.addEventListener("click", () => {
-      tabRetail.classList.add("active");
-      tabInvest.classList.remove("active");
-      currentAssetTab = "varejo";
+  // Seleção de Segmentos (Barra conforme Imagem de Referência)
+  const segmentBtns = document.querySelectorAll(".segment-tab-btn");
+  segmentBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      segmentBtns.forEach(b => {
+        b.classList.remove("active");
+        b.setAttribute("aria-selected", "false");
+      });
+      btn.classList.add("active");
+      btn.setAttribute("aria-selected", "true");
+      currentAssetTab = btn.dataset.segment;
       renderAssets();
     });
+  });
 
-    tabInvest.addEventListener("click", () => {
-      tabInvest.classList.add("active");
-      tabRetail.classList.remove("active");
-      currentAssetTab = "investimentos";
-      renderAssets();
-    });
-  }
-
-  // Controles de Vídeo
+  // Controles de Vídeo (Autoplay contínuo em Loop e Áudio inicialmente mudo)
   const video = document.getElementById("instVideo");
   const playBtn = document.getElementById("videoPlayBtn");
-  if (video && playBtn) {
-    playBtn.addEventListener("click", () => {
-      if (video.paused) {
-        video.play();
+  const audioBtn = document.getElementById("videoAudioBtn");
+  const audioStatusText = document.getElementById("audioStatusText");
+
+  if (video) {
+    video.muted = true;
+    video.loop = true;
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(err => {
+        console.log("Autoplay silencioso aguardando interação:", err);
+      });
+    }
+
+    if (playBtn) {
+      playBtn.addEventListener("click", () => {
+        if (video.paused) {
+          video.play();
+          playBtn.innerHTML = `<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>`;
+        } else {
+          video.pause();
+          playBtn.innerHTML = `<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>`;
+        }
+      });
+
+      video.addEventListener("play", () => {
         playBtn.innerHTML = `<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>`;
-      } else {
-        video.pause();
+      });
+
+      video.addEventListener("pause", () => {
         playBtn.innerHTML = `<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>`;
-      }
-    });
+      });
+    }
 
-    video.addEventListener("play", () => {
-      playBtn.innerHTML = `<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>`;
-    });
-
-    video.addEventListener("pause", () => {
-      playBtn.innerHTML = `<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>`;
-    });
-  }
-
-  // Modal Mosaico Clientes
-  const clientsMosaicTrigger = document.getElementById("clientsMosaicTrigger");
-  const modalClients = document.getElementById("modalClients");
-  const modalClose = document.getElementById("modalClose");
-  if (clientsMosaicTrigger && modalClients) {
-    clientsMosaicTrigger.addEventListener("click", () => {
-      modalClients.classList.add("open");
-    });
-  }
-  if (modalClose && modalClients) {
-    modalClose.addEventListener("click", () => {
-      modalClients.classList.remove("open");
-    });
-    modalClients.addEventListener("click", (e) => {
-      if (e.target === modalClients) {
-        modalClients.classList.remove("open");
+    if (audioBtn) {
+      function syncAudioButton() {
+        if (video.muted) {
+          audioBtn.innerHTML = `
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+              <line x1="23" y1="9" x2="17" y2="15"/>
+              <line x1="17" y1="9" x2="23" y2="15"/>
+            </svg>
+            <span id="audioStatusText">${currentLang === "pt" ? "Ativar Áudio" : "Unmute"}</span>
+          `;
+          audioBtn.setAttribute("title", currentLang === "pt" ? "Ativar áudio" : "Unmute audio");
+        } else {
+          audioBtn.innerHTML = `
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+            <span id="audioStatusText">${currentLang === "pt" ? "Som Ativo" : "Sound On"}</span>
+          `;
+          audioBtn.setAttribute("title", currentLang === "pt" ? "Silenciar áudio" : "Mute audio");
+        }
       }
-    });
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && modalClients.classList.contains("open")) {
-        modalClients.classList.remove("open");
-      }
-    });
+
+      audioBtn.addEventListener("click", () => {
+        video.muted = !video.muted;
+        syncAudioButton();
+      });
+    }
   }
 
   // Formulário de Contato

@@ -29,18 +29,7 @@
 </head>
 <body>
 
-  <!-- ========================================================================
-       BARRA DE COMPARAÇÃO DE PROTÓTIPOS (SWITCHER)
-       ======================================================================== -->
-  <div style="position: fixed; top: 0; left: 0; width: 100%; height: 34px; background: #050B1E; color: #E2E8F0; font-size: 0.78rem; padding: 0 1.25rem; display: flex; justify-content: space-between; align-items: center; z-index: 1100; border-bottom: 1px solid rgba(255,255,255,0.1); font-family: 'Montserrat', sans-serif; box-sizing: border-box;">
-    <div style="display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 600; text-transform: uppercase;">
-      <span style="width: 8px; height: 8px; border-radius: 50%; background: #EAB308; box-shadow: 0 0 8px #EAB308;"></span>
-      <span>Proposta 1: Dark Luxury Gold (Identidade Noturna & Metálica)</span>
-    </div>
-    <a href="prototipo-gtr.html" style="color: #C9A66B; font-weight: 600; display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(255,255,255,0.06); text-decoration: none;" title="Comparar com a Proposta 2">
-      <span>Ver Proposta 2 (Estilo Boutique GTR)</span> →
-    </a>
-  </div>
+
   <header class="header" id="header">
     <div class="container navbar">
       <!-- Logotipo WNK -->
@@ -60,6 +49,7 @@
         <a href="#parceiros" class="nav-link" data-i18n="nav.clients">Parceiros</a>
         <a href="#compliance" class="nav-link" data-i18n="nav.compliance">Compliance</a>
         <a href="#contato" class="nav-link" data-i18n="nav.contact">Contato</a>
+        <a href="#lideranca" class="nav-link" data-i18n="nav.leadership">Liderança</a>
 
         <!-- Controles extras para Mobile no drawer -->
         <div class="nav-actions mobile-only" style="margin-top: 1rem; display: flex; gap: 0.75rem; width: 100%;">
@@ -182,23 +172,31 @@
             </p>
           </div>
 
-          <!-- Grade de Contadores & Métricas Chave -->
+          <!-- Grade de Contadores & Métricas Chave (Posicionamento Estratégico) -->
           <div class="stats-grid">
             <div class="stat-card">
-              <div class="stat-number text-metallic" data-i18n="stat.companies">+100</div>
-              <div class="stat-label" data-i18n="stat.companies_lbl">Empresas atendidas e parceiros</div>
+              <div class="stat-number text-metallic" data-i18n="stat.stores">+100</div>
+              <div class="stat-label" data-i18n="stat.stores_lbl">Lojas vendidas</div>
             </div>
             <div class="stat-card">
-              <div class="stat-number text-metallic" data-i18n="stat.assets">30+</div>
-              <div class="stat-label" data-i18n="stat.assets_lbl">Segmentos de ativos comercializados</div>
+              <div class="stat-number text-metallic" data-i18n="stat.bts">+80</div>
+              <div class="stat-label" data-i18n="stat.bts_lbl">Estruturação de BTS</div>
             </div>
             <div class="stat-card">
-              <div class="stat-number text-metallic" data-i18n="stat.countries">8+</div>
-              <div class="stat-label" data-i18n="stat.countries_lbl">Países com negócios e investimentos</div>
+              <div class="stat-number text-metallic" data-i18n="stat.cities">+40</div>
+              <div class="stat-label" data-i18n="stat.cities_lbl">Cidades com vendas de ativos</div>
             </div>
             <div class="stat-card">
-              <div class="stat-number text-metallic" data-i18n="stat.contracts">10+10</div>
-              <div class="stat-label" data-i18n="stat.contracts_lbl">Anos em contratos estruturados BTS</div>
+              <div class="stat-number text-metallic" data-i18n="stat.m2_sold">+2 mi</div>
+              <div class="stat-label" data-i18n="stat.m2_sold_lbl">m² comercializados</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number text-metallic" data-i18n="stat.m2_leased">+1 mi</div>
+              <div class="stat-label" data-i18n="stat.m2_leased_lbl">m² locados</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number text-metallic" data-i18n="stat.slb">+500 mil</div>
+              <div class="stat-label" data-i18n="stat.slb_lbl">Sale and Leaseback</div>
             </div>
           </div>
         </div>
@@ -400,21 +398,31 @@
           Assista ao nosso vídeo institucional e conheça nossa visão de mercado, agilidade e presença em múltiplos segmentos.
         </p>
 
-        <!-- Player Customizado -->
+        <!-- Player Customizado com Autoplay em Loop e Áudio Inicialmente Mudo -->
         <div class="video-container">
           <div class="video-wrapper">
-            <video id="instVideo" playsinline preload="metadata" poster="assets/images/hero_reference.jpg">
+            <video id="instVideo" playsinline autoplay muted loop preload="auto" poster="assets/images/hero_reference.jpg">
               <source src="assets/video/wnk_institucional.mp4" type="video/mp4">
               Seu navegador não suporta a reprodução deste vídeo.
             </video>
           </div>
           <!-- Controles customizados sobrepostos -->
           <div class="video-custom-controls">
-            <button class="video-play-btn" id="videoPlayBtn" aria-label="Reproduzir vídeo institucional">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                <path d="M8 5v14l11-7z"/>
-              </svg>
-            </button>
+            <div class="video-controls-left">
+              <button class="video-play-btn" id="videoPlayBtn" aria-label="Pausar ou reproduzir vídeo">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                </svg>
+              </button>
+              <button class="video-audio-btn" id="videoAudioBtn" aria-label="Ativar ou desativar áudio" title="Ativar áudio">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+                  <line x1="23" y1="9" x2="17" y2="15"/>
+                  <line x1="17" y1="9" x2="23" y2="15"/>
+                </svg>
+                <span id="audioStatusText">Ativar Áudio</span>
+              </button>
+            </div>
             <div class="video-meta">WNK Corporate • Vídeo Oficial</div>
           </div>
         </div>
@@ -434,17 +442,40 @@
           </p>
         </div>
 
-        <!-- Botões de Alternância das Abas -->
-        <div class="assets-tabs">
-          <button class="tab-btn active" id="tabRetail">
-            <span data-i18n="assets.tab_retail">Varejo & Retail (16)</span>
-          </button>
-          <button class="tab-btn" id="tabInvest">
-            <span data-i18n="assets.tab_invest">Investimentos & Large Scale (14)</span>
-          </button>
+        <!-- Barra de Seleção de Segmentos Conforme Imagem de Referência -->
+        <div class="segments-filter-bar">
+          <div class="segments-filter-label" data-i18n="assets.choose_segment">
+            Escolha o segmento:
+          </div>
+          <div class="segments-filter-list" role="tablist">
+            <button class="segment-tab-btn active" data-segment="lajes" role="tab" aria-selected="true">
+              <span class="segment-tab-title" data-i18n="segment.lajes">Lajes Corporativas</span>
+              <span class="segment-tab-arrow">↗</span>
+            </button>
+            <button class="segment-tab-btn" data-segment="logistico" role="tab" aria-selected="false">
+              <span class="segment-tab-title" data-i18n="segment.logistico">Logístico</span>
+              <span class="segment-tab-arrow">↗</span>
+            </button>
+            <button class="segment-tab-btn" data-segment="renda_urbana" role="tab" aria-selected="false">
+              <span class="segment-tab-title" data-i18n="segment.renda_urbana">Renda Urbana</span>
+              <span class="segment-tab-arrow">↗</span>
+            </button>
+            <button class="segment-tab-btn" data-segment="agro" role="tab" aria-selected="false">
+              <span class="segment-tab-title" data-i18n="segment.agro">Agro</span>
+              <span class="segment-tab-arrow">↗</span>
+            </button>
+            <button class="segment-tab-btn" data-segment="shopping" role="tab" aria-selected="false">
+              <span class="segment-tab-title" data-i18n="segment.shopping">Shopping</span>
+              <span class="segment-tab-arrow">↗</span>
+            </button>
+            <button class="segment-tab-btn" data-segment="residencial" role="tab" aria-selected="false">
+              <span class="segment-tab-title" data-i18n="segment.residencial">Residencial e Residencial Estudantil</span>
+              <span class="segment-tab-arrow">↗</span>
+            </button>
+          </div>
         </div>
 
-        <!-- Grade Dinâmica de Ativos (Injetada via JS com i18n) -->
+        <!-- Grade Dinâmica de Ativos por Segmento (Injetada via JS com i18n) -->
         <div class="assets-grid" id="assetsList">
           <!-- Renderizado via script.js -->
         </div>
@@ -706,61 +737,11 @@
           </div>
         </div>
 
-        <!-- Mosaico Completo Interativo com Botão para Ampliar -->
-        <div class="clients-mosaic-card" id="clientsMosaicTrigger" style="cursor: pointer;" title="Clique para ampliar">
-          <img src="assets/images/clientes.jpg" alt="Mosaico de 120 logos de empresas atendidas e parceiros da WNK Corporate" loading="lazy">
-          <div style="margin-top: 1rem; color: var(--gold-400); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;" data-i18n="clients.mosaic_cta">
-            Clique para ampliar o mosaico oficial de clientes
-          </div>
-        </div>
+
       </div>
     </section>
 
-    <!-- ========================================================================
-         LIDERANÇA & DIREÇÃO TÉCNICA (RODRIGO PAPP LOPES)
-         ======================================================================== -->
-    <section class="section leadership-section" id="lideranca">
-      <div class="container">
-        <div class="text-center">
-          <span class="section-label" data-i18n="lead.label">Direção Técnica</span>
-          <h2 class="section-title text-metallic" data-i18n="lead.title">Liderança com Visão Multidisciplinar</h2>
-        </div>
 
-        <div class="leadership-card">
-          <!-- Monograma Oficial Luxury (Sem foto pessoal provisória conforme solicitação) -->
-          <div class="leader-monogram">
-            <div class="leader-monogram-inner">
-              <span class="leader-monogram-letters">RPL</span>
-              <span class="leader-monogram-label">WNK LEAD</span>
-            </div>
-          </div>
-
-          <!-- Credenciais e Biografia Executiva -->
-          <div>
-            <h3 class="leader-name" data-i18n="lead.name">Rodrigo Papp Lopes</h3>
-            <div class="leader-roles" data-i18n="lead.roles">Corretor de Imóveis & Arquiteto Urbanista</div>
-            <p class="leader-bio" data-i18n="lead.bio">
-              Profissional que une no mesmo ecossistema a visão técnica e espacial da Arquitetura com a assertividade da Corretagem Corporativa e a inteligência das Operações Financeiras de M&A. Especialista em conduzir negociações complexas com os principais players do Brasil e exterior.
-            </p>
-
-            <div class="credentials-badges">
-              <div class="cred-badge">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                <span data-i18n="lead.creci">CRECI: 63.893-F</span>
-              </div>
-              <div class="cred-badge">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-                <span data-i18n="lead.cau">CAU: A136977-6</span>
-              </div>
-              <div class="cred-badge">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                <span data-i18n="lead.crea">CREA: 260562967-8</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- ========================================================================
          CONTATO & ATENDIMENTO PERSONALIZADO
@@ -908,6 +889,59 @@
         </div>
       </div>
     </section>
+
+    <!-- ========================================================================
+         LIDERANÇA & DIREÇÃO EXECUTIVA (RODRIGO P. LOPES)
+         ======================================================================== -->
+    <section class="section leadership-section" id="lideranca">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label" data-i18n="lead.label">Direção Executiva & Novos Negócios</span>
+          <h2 class="section-title text-metallic" data-i18n="lead.title">Liderança com Visão Multidisciplinar</h2>
+        </div>
+
+        <div class="leadership-card">
+          <!-- Foto Oficial de Rodrigo P. Lopes com Moldura Luxury Gold -->
+          <div class="leader-photo-wrapper">
+            <img src="assets/images/rodrigo_lopes.jpg" alt="Rodrigo P. Lopes - Sócio-Proprietário WNK Corporate" class="leader-photo" loading="lazy">
+            <div class="leader-photo-badge">WNK EXECUTIVE</div>
+          </div>
+
+          <!-- Credenciais e Biografia Executiva -->
+          <div class="leader-content">
+            <h3 class="leader-name" data-i18n="lead.name">Rodrigo P. Lopes</h3>
+            <div class="leader-roles" data-i18n="lead.roles">
+              Sócio-Proprietário | Head de Novos Negócios | Estruturação de Negócios, Finanças & M&A
+            </div>
+            <p class="leader-bio" data-i18n="lead.bio1">
+              Com mais de duas décadas de trajetória executiva, atua na liderança das frentes Comercial, Administrativa e de Gestão de Projetos. À frente da unidade de Novos Negócios da WNK Corporate, conduz estudos de viabilidade mercadológica, prospecção e avaliação estratégica de oportunidades de investimento e fusões & aquisições (M&A).
+            </p>
+            <p class="leader-bio" data-i18n="lead.bio2" style="margin-top: -0.75rem; margin-bottom: 1.5rem;">
+              É Arquiteto e Designer de Interiores, com especialização em Gestão de Projetos pela Universidade Paulista (UNIP).
+            </p>
+
+            <div class="credentials-badges">
+              <div class="cred-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span data-i18n="lead.creci">CRECI: 63.893-F</span>
+              </div>
+              <div class="cred-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                <span data-i18n="lead.cau">CAU: A136977-6</span>
+              </div>
+              <div class="cred-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span data-i18n="lead.crea">CREA: 260562967-8</span>
+              </div>
+              <div class="cred-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                <span data-i18n="lead.unip">Gestão de Projetos • UNIP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- ========================================================================
@@ -1004,15 +1038,7 @@
     </svg>
   </a>
 
-  <!-- ========================================================================
-       MODAL DE ZOOM DO MOSAICO DE CLIENTES
-       ======================================================================== -->
-  <div class="modal-overlay" id="modalClients">
-    <div class="modal-content">
-      <button class="modal-close-btn" id="modalClose" aria-label="Fechar visualização">✕</button>
-      <img src="assets/images/clientes.jpg" alt="Mosaico completo ampliado de clientes e parceiros" style="width: 100%; height: auto;">
-    </div>
-  </div>
+
 
   <!-- JavaScript -->
   <script src="script.js"></script>

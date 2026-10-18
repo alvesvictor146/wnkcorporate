@@ -5,3 +5,7 @@
 Thumbs.db
 powershell.cmd
 *.log
+
+# Build & Deploy
+dist_hostgator/
+*.zip

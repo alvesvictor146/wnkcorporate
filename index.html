@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WNK Corporate — Gestão Imobiliária & Estruturação de Ativos</title>
+  <title>WNK Corporate — Gestão de Imóveis & Estruturação de Ativos</title>
   <meta name="description" content="A WNK Corporate é a conexão direta que leva você aos melhores negócios do mercado imobiliário. BTS, Fusões e Aquisições (M&A), Valuation e Ativos Corporativos no Brasil e no Exterior.">
   <meta name="keywords" content="WNK Corporate, build to suit, BTS, M&A imobiliário, valuation imobiliário, galpões logísticos, imóveis corporativos, sale and leaseback, arquitetura corporativa, imóveis no exterior">
-  <meta name="author" content="WNK Corporate Gestão Imobiliária">
+  <meta name="author" content="WNK Corporate Gestão de Imóveis LTDA">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph / Redes Sociais -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="WNK Corporate — Gestão Imobiliária & Estruturação de Ativos">
+  <meta property="og:title" content="WNK Corporate — Gestão de Imóveis & Estruturação de Ativos">
   <meta property="og:description" content="A conexão direta que leva você aos melhores negócios do mercado imobiliário corporativo no Brasil e no exterior.">
   <meta property="og:url" content="https://www.wnkcorporate.com.br/">
   <meta property="og:image" content="assets/images/hero_reference.jpg">
@@ -245,6 +245,7 @@
                   <span data-i18n="serv1.item3">Adequação normativa e parametrização urbana</span>
                 </li>
               </ul>
+              <a href="https://api.whatsapp.com/send?phone=5511955805749&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20Arquitetura%20%26%20Viabilidade." target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem; text-align: center;">Consultar pelo WhatsApp ➔</a>
             </div>
           </article>
 
@@ -278,6 +279,7 @@
                   <span data-i18n="serv2.item4">Securitização de recebíveis imobiliários & CRI</span>
                 </li>
               </ul>
+              <a href="https://api.whatsapp.com/send?phone=5511955805749&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20Opera%C3%A7%C3%B5es%20Imobili%C3%A1rias%20e%20BTS." target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem; text-align: center;">Consultar pelo WhatsApp ➔</a>
             </div>
           </article>
 
@@ -307,6 +309,7 @@
                   <span data-i18n="serv3.item3">Cruzamento de métricas financeiras para valor justo de venda</span>
                 </li>
               </ul>
+              <a href="https://api.whatsapp.com/send?phone=5511955805749&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20Opera%C3%A7%C3%B5es%20Financeiras%20%26%20M%26A." target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem; text-align: center;">Consultar pelo WhatsApp ➔</a>
             </div>
           </article>
         </div>
@@ -436,7 +439,10 @@
 
         <!-- Botões de Alternância das Abas -->
         <div class="assets-tabs">
-          <button class="tab-btn active" id="tabRetail">
+          <button class="tab-btn active" id="tabCorp">
+            <span data-i18n="assets.tab_corp">Corporativo & Sedes (6)</span>
+          </button>
+          <button class="tab-btn" id="tabRetail">
             <span data-i18n="assets.tab_retail">Varejo & Retail (16)</span>
           </button>
           <button class="tab-btn" id="tabInvest">
@@ -444,9 +450,19 @@
           </button>
         </div>
 
-        <!-- Grade Dinâmica de Ativos (Injetada via JS com i18n) -->
-        <div class="assets-grid" id="assetsList">
-          <!-- Renderizado via script.js -->
+        <!-- Grade Dinâmica de Ativos com Navegação Carrossel -->
+        <div class="assets-carousel-wrapper">
+          <button class="carousel-arrow prev" id="assetsPrev" aria-label="Anterior">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+
+          <div class="assets-grid" id="assetsList">
+            <!-- Renderizado via script.js -->
+          </div>
+
+          <button class="carousel-arrow next" id="assetsNext" aria-label="Próximo">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
         </div>
       </div>
     </section>
@@ -835,12 +851,6 @@
               <a href="https://facebook.com/consultorimoveiswnk" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook da WNK Corporate">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
               </a>
-              <a href="https://twitter.com/CorporateWnk" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X / Twitter da WNK Corporate">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
-              </a>
-              <a href="https://br.pinterest.com/WNKCORPORATE" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Pinterest da WNK Corporate">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="4" x2="12" y2="20"/><polygon points="8 12 12 8 16 12"/></svg>
-              </a>
             </div>
           </div>
 
@@ -903,6 +913,10 @@
               <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="contact.f_submit">
                 Enviar Mensagem pelo Site
               </button>
+              <a href="https://api.whatsapp.com/send?phone=5511955805749&text=Ol%C3%A1!%20Gostaria%20de%20iniciar%20um%20atendimento%20estrat%C3%A9gico%20com%20a%20WNK%20Corporate." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%; margin-top: 0.85rem; text-align: center; display: inline-flex; justify-content: center; align-items: center; gap: 0.5rem;" data-i18n="contact.f_or_wpp_btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.071.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824z"/></svg>
+                Conversar pelo WhatsApp (+55 11 95580-5749)
+              </a>
             </form>
           </div>
         </div>
@@ -931,12 +945,6 @@
             </a>
             <a href="https://facebook.com/consultorimoveiswnk" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook da WNK Corporate">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </a>
-            <a href="https://twitter.com/CorporateWnk" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X / Twitter da WNK Corporate">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
-            </a>
-            <a href="https://br.pinterest.com/WNKCORPORATE" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Pinterest da WNK Corporate">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="4" x2="12" y2="20"/><polygon points="8 12 12 8 16 12"/></svg>
             </a>
           </div>
         </div>
@@ -971,7 +979,7 @@
         <div class="footer-col">
           <h4 data-i18n="footer.legal_title">Informações Corporativas</h4>
           <div class="footer-legal-panel">
-            <strong data-i18n="footer.legal_razao">WNK Corporate Gestão Imobiliária EIRELI - ME</strong>
+            <strong data-i18n="footer.legal_razao">WNK Corporate Gestão de Imóveis LTDA</strong>
             <p data-i18n="footer.legal_cnpj">CNPJ: 20.929.539/0001-37</p>
             <p data-i18n="footer.legal_creci">CRECI: 32.390-J</p>
             <p>Rodrigo Papp Lopes: CRECI 63.893-F</p>

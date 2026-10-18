@@ -95,8 +95,10 @@ const translations = {
     "assets.label": "Portfólio Abrangente",
     "assets.title": "Segmentos de Ativos Comercializados",
     "assets.subtitle": "Dos grandes complexos industriais ao varejo capilarizado, atendemos demandas sob medida em mais de 30 categorias patrimoniais.",
+    "assets.tab_corp": "Corporativo & Sedes (6)",
     "assets.tab_retail": "Varejo & Retail (16)",
     "assets.tab_invest": "Investimentos & Large Scale (14)",
+    "contact.f_or_wpp_btn": "Conversar pelo WhatsApp (+55 11 95580-5749)",
 
     // Exterior
     "global.label": "Presença Internacional",
@@ -189,7 +191,7 @@ const translations = {
     "footer.nav_title": "Navegação Rápida",
     "footer.serv_title": "Principais Serviços",
     "footer.legal_title": "Informações Corporativas",
-    "footer.legal_razao": "WNK Corporate Gestão Imobiliária EIRELI - ME",
+    "footer.legal_razao": "WNK Corporate Gestão de Imóveis LTDA",
     "footer.legal_cnpj": "CNPJ: 20.929.539/0001-37",
     "footer.legal_creci": "CRECI: 32.390-J",
     "footer.rights": "Todos os direitos reservados.",
@@ -283,8 +285,10 @@ const translations = {
     "assets.label": "Comprehensive Portfolio",
     "assets.title": "Asset Classes Commercialized",
     "assets.subtitle": "From mega-logistics campuses to prime high-street retail, handling institutional mandates across over 30 asset categories.",
+    "assets.tab_corp": "Corporate & Headquarters (6)",
     "assets.tab_retail": "Retail & Commercial (16)",
     "assets.tab_invest": "Investments & Large Scale (14)",
+    "contact.f_or_wpp_btn": "Chat on WhatsApp (+55 11 95580-5749)",
 
     // Exterior
     "global.label": "Global Reach",
@@ -377,7 +381,7 @@ const translations = {
     "footer.nav_title": "Quick Links",
     "footer.serv_title": "Key Services",
     "footer.legal_title": "Corporate Information",
-    "footer.legal_razao": "WNK Corporate Gestão Imobiliária EIRELI - ME",
+    "footer.legal_razao": "WNK Corporate Gestão de Imóveis LTDA",
     "footer.legal_cnpj": "CNPJ: 20.929.539/0001-37",
     "footer.legal_creci": "CRECI: 32.390-J",
     "footer.rights": "All rights reserved.",
@@ -386,9 +390,53 @@ const translations = {
 };
 
 // ==========================================================================
-// 2. DADOS DOS SEGMENTOS DE ATIVOS (VAREJO & INVESTIMENTOS)
+// 2. DADOS DOS SEGMENTOS DE ATIVOS (CORPORATIVO, VAREJO & INVESTIMENTOS)
 // ==========================================================================
 const assetsData = {
+  corporativo: [
+    {
+      icon: "building",
+      pt: "Lajes Corporativas Triple A (AAA)",
+      en: "Triple A (AAA) Corporate Floors",
+      desc_pt: "Andares em edifícios de altíssimo padrão nos principais eixos econômicos.",
+      desc_en: "Floors in premier landmark towers across prime economic hubs."
+    },
+    {
+      icon: "briefcase",
+      pt: "Edifícios Corporativos Monousuário",
+      en: "Single-Tenant Headquarters",
+      desc_pt: "Sedes institucionais completas para grandes corporações e multinacionais.",
+      desc_en: "Full institutional headquarters for large corporations and multinationals."
+    },
+    {
+      icon: "layout",
+      pt: "Salas Comerciais & Andares Corridos",
+      en: "Commercial Suites & Full Floors",
+      desc_pt: "Módulos flexíveis para consultorias, escritórios e empresas de tecnologia.",
+      desc_en: "Flexible modules for consultancies, law firms and tech companies."
+    },
+    {
+      icon: "landmark",
+      pt: "Complexos Financeiros & Centros de Negócios",
+      en: "Financial Centers & Business Hubs",
+      desc_pt: "Ativos estratégicos integrados a redes bancárias e centros de convenções.",
+      desc_en: "Strategic assets integrated with banking networks and convention centers."
+    },
+    {
+      icon: "briefcase",
+      pt: "Retrofit de Espaços Corporativos",
+      en: "Corporate Space Retrofitting",
+      desc_pt: "Requalificação completa de edifícios consolidados para novos padrões ESG.",
+      desc_en: "Comprehensive revamping of established buildings to modern ESG standards."
+    },
+    {
+      icon: "building",
+      pt: "Sedes Administrativas Sob Medida (BTS)",
+      en: "Tailor-Made Corporate BTS",
+      desc_pt: "Estruturação sob demanda com contratos atípicos de longo prazo (10 a 20 anos).",
+      desc_en: "On-demand structuring with long-term atypical lease agreements (10-20 yrs)."
+    }
+  ],
   varejo: [
     { icon: "warehouse", pt: "Centros de Distribuição", en: "Distribution Centers" },
     { icon: "waves", pt: "Parques Aquáticos", en: "Water Parks" },
@@ -430,7 +478,7 @@ const assetsData = {
 // ==========================================================================
 let currentLang = localStorage.getItem("wnk_lang") || "pt";
 let currentTheme = localStorage.getItem("wnk_theme") || "dark";
-let currentAssetTab = "varejo";
+let currentAssetTab = "corporativo";
 
 // ==========================================================================
 // 4. FUNÇÃO DE IDIOMA
@@ -488,6 +536,22 @@ function setTheme(theme) {
 // ==========================================================================
 // 6. RENDERIZADOR DE ATIVOS
 // ==========================================================================
+function getAssetIconSvg(icon) {
+  if (icon === "building") {
+    return `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="9" y1="6" x2="9.01" y2="6"/><line x1="15" y1="6" x2="15.01" y2="6"/><line x1="9" y1="10" x2="9.01" y2="10"/><line x1="15" y1="10" x2="15.01" y2="10"/><line x1="9" y1="14" x2="9.01" y2="14"/><line x1="15" y1="14" x2="15.01" y2="14"/><line x1="9" y1="18" x2="15" y2="18"/></svg>`;
+  }
+  if (icon === "briefcase") {
+    return `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>`;
+  }
+  if (icon === "landmark") {
+    return `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="21" x2="21" y2="21"/><line x1="4" y1="10" x2="20" y2="10"/><polygon points="12 3 2 10 22 10 12 3"/><line x1="6" y1="10" x2="6" y2="21"/><line x1="10" y1="10" x2="10" y2="21"/><line x1="14" y1="10" x2="14" y2="21"/><line x1="18" y1="10" x2="18" y2="21"/></svg>`;
+  }
+  if (icon === "layout") {
+    return `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>`;
+  }
+  return `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg>`;
+}
+
 function renderAssets() {
   const container = document.getElementById("assetsList");
   if (!container) return;
@@ -495,19 +559,41 @@ function renderAssets() {
   const list = assetsData[currentAssetTab] || [];
   container.innerHTML = "";
 
-  list.forEach(item => {
-    const pill = document.createElement("div");
-    pill.className = "asset-pill";
-    pill.innerHTML = `
-      <div class="asset-icon">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="9"/>
-          <path d="M12 8v8M8 12h8"/>
-        </svg>
-      </div>
-      <div class="asset-name">${item[currentLang]}</div>
-    `;
-    container.appendChild(pill);
+  list.forEach((item, index) => {
+    const title = item[currentLang];
+    const desc = currentLang === "pt" ? item.desc_pt : item.desc_en;
+    const msg = currentLang === "pt"
+      ? `Olá! Gostaria de mais informações sobre ${title}.`
+      : `Hello! I would like more information about ${title}.`;
+    const wppUrl = `https://api.whatsapp.com/send?phone=5511955805749&text=${encodeURIComponent(msg)}`;
+
+    const card = document.createElement("a");
+    card.href = wppUrl;
+    card.target = "_blank";
+    card.rel = "noopener noreferrer";
+
+    if (desc) {
+      card.className = `asset-card-corp ${index === 0 ? 'active' : ''}`;
+      card.innerHTML = `
+        <div class="asset-icon-corp">
+          ${getAssetIconSvg(item.icon)}
+        </div>
+        <div class="asset-content-corp">
+          <h3 class="asset-title-corp">${title}</h3>
+          <p class="asset-desc-corp">${desc}</p>
+        </div>
+      `;
+    } else {
+      card.className = "asset-pill asset-card-link";
+      card.innerHTML = `
+        <div class="asset-icon">
+          ${getAssetIconSvg(item.icon)}
+        </div>
+        <div class="asset-name">${title}</div>
+      `;
+    }
+
+    container.appendChild(card);
   });
 }
 
@@ -581,21 +667,32 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Abas de Ativos (Tabs)
+  const tabCorp = document.getElementById("tabCorp");
   const tabRetail = document.getElementById("tabRetail");
   const tabInvest = document.getElementById("tabInvest");
-  if (tabRetail && tabInvest) {
-    tabRetail.addEventListener("click", () => {
-      tabRetail.classList.add("active");
-      tabInvest.classList.remove("active");
-      currentAssetTab = "varejo";
-      renderAssets();
-    });
+  const allAssetTabs = [tabCorp, tabRetail, tabInvest].filter(Boolean);
 
-    tabInvest.addEventListener("click", () => {
-      tabInvest.classList.add("active");
-      tabRetail.classList.remove("active");
-      currentAssetTab = "investimentos";
-      renderAssets();
+  function activateAssetTab(btn, tabKey) {
+    allAssetTabs.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    currentAssetTab = tabKey;
+    renderAssets();
+  }
+
+  if (tabCorp) tabCorp.addEventListener("click", () => activateAssetTab(tabCorp, "corporativo"));
+  if (tabRetail) tabRetail.addEventListener("click", () => activateAssetTab(tabRetail, "varejo"));
+  if (tabInvest) tabInvest.addEventListener("click", () => activateAssetTab(tabInvest, "investimentos"));
+
+  // Controles do Carrossel de Ativos
+  const assetsPrev = document.getElementById("assetsPrev");
+  const assetsNext = document.getElementById("assetsNext");
+  const assetsList = document.getElementById("assetsList");
+  if (assetsPrev && assetsNext && assetsList) {
+    assetsPrev.addEventListener("click", () => {
+      assetsList.scrollBy({ left: -340, behavior: "smooth" });
+    });
+    assetsNext.addEventListener("click", () => {
+      assetsList.scrollBy({ left: 340, behavior: "smooth" });
     });
   }
 
@@ -666,21 +763,23 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // Preparar mensagem estruturada
-      const subject = encodeURIComponent(`Contato Comercial WNK Corporate - ${name} (${company || 'Particular'})`);
-      const body = encodeURIComponent(
-        `Nome: ${name}\nEmpresa: ${company}\nE-mail: ${email}\nTelefone/WhatsApp: ${phone}\nInteresse: ${interest}\nMensagem:\n${message}\n\nEnviado via site wnkcorporate.com.br`
-      );
+      // Preparar mensagem estruturada para WhatsApp
+      const interestTopic = interest || (currentLang === "pt" ? "as soluções corporativas da WNK Corporate" : "WNK Corporate solutions");
+      const wppText = currentLang === "pt"
+        ? `Olá! Gostaria de mais informações sobre ${interestTopic}.\n\n*Nome:* ${name}\n*Empresa:* ${company || 'Particular'}\n*E-mail:* ${email}\n*Telefone:* ${phone}\n*Detalhes:* ${message}`
+        : `Hello! I would like more information about ${interestTopic}.\n\n*Name:* ${name}\n*Company:* ${company || 'Individual'}\n*Email:* ${email}\n*Phone:* ${phone}\n*Details:* ${message}`;
+
+      const whatsappUrl = `https://api.whatsapp.com/send?phone=5511955805749&text=${encodeURIComponent(wppText)}`;
 
       // Feedback ao usuário
       showToast(
         currentLang === "pt"
-          ? "Obrigado! Sua solicitação foi registrada. Abrindo envio direto para wnkcorporate@wnkcorporate.com.br..."
-          : "Thank you! Your inquiry was registered. Opening direct message to wnkcorporate@wnkcorporate.com.br..."
+          ? "Obrigado! Redirecionando para o WhatsApp oficial (+55 11 95580-5749)..."
+          : "Thank you! Redirecting to official WhatsApp (+55 11 95580-5749)..."
       );
 
-      // Disparar cliente de e-mail direto
-      window.location.href = `mailto:wnkcorporate@wnkcorporate.com.br?subject=${subject}&body=${body}`;
+      // Redireciona para o WhatsApp oficial
+      window.open(whatsappUrl, "_blank");
 
       // Limpar formulário
       contactForm.reset();

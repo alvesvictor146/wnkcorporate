@@ -31,6 +31,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // 2.1 CORPORATE ASSET CARDS CAROUSEL CONTROLS
+  const corpTrack = document.getElementById("gtrCorpTrack");
+  const corpPrev = document.getElementById("gtrCorpPrev");
+  const corpNext = document.getElementById("gtrCorpNext");
+  if (corpTrack && corpPrev && corpNext) {
+    corpPrev.addEventListener("click", () => {
+      corpTrack.scrollBy({ left: -320, behavior: "smooth" });
+    });
+    corpNext.addEventListener("click", () => {
+      corpTrack.scrollBy({ left: 320, behavior: "smooth" });
+    });
+  }
+
   // 3. MULTILINGUAL SUPPORT (PT / EN)
   const translations = {
     pt: {
@@ -227,13 +240,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const interest = document.getElementById("gtrInterest")?.value;
       const message = document.getElementById("gtrMessage")?.value.trim();
 
-      const subject = encodeURIComponent(`[Contato Boutique WNK] ${name} - ${interest || 'Interesse Corporativo'}`);
-      const body = encodeURIComponent(
-        `Nome: ${name}\nE-mail: ${email}\nTelefone/WhatsApp: ${phone}\nInteresse: ${interest}\nMensagem:\n${message}\n\nEnviado através do Protótipo 2 (Estilo Boutique GTR)`
-      );
+      const topic = interest || (currentLang === "pt" ? "as soluções corporativas da WNK Corporate" : "WNK Corporate solutions");
+      const wppText = currentLang === "pt"
+        ? `Olá! Gostaria de mais informações sobre ${topic}.\n\n*Nome:* ${name}\n*E-mail:* ${email}\n*Telefone:* ${phone}\n*Detalhes:* ${message}`
+        : `Hello! I would like more information about ${topic}.\n\n*Name:* ${name}\n*Email:* ${email}\n*Phone:* ${phone}\n*Details:* ${message}`;
 
-      alert(translations[currentLang].contact.toast);
-      window.location.href = `mailto:wnkcorporate@wnkcorporate.com.br?subject=${subject}&body=${body}`;
+      const whatsappUrl = `https://api.whatsapp.com/send?phone=5511955805749&text=${encodeURIComponent(wppText)}`;
+      window.open(whatsappUrl, "_blank");
       form.reset();
     });
   }

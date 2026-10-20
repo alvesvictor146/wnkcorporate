@@ -1162,6 +1162,16 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-bottom-gtr a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-bottom-gtr a:hover {
+  color: var(--color-accent-gold, #C5A880);
+}
+
 /* ==========================================================================
    BOTÃO WHATSAPP DISCRETO FARIA LIMA
    ========================================================================== */

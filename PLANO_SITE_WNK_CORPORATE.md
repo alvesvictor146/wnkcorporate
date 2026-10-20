@@ -59,7 +59,7 @@
 - **WhatsApp/Telefone:** +55 11 95580-5749 → `https://api.whatsapp.com/send?phone=5511955805749`
 - **E-mails:** wnkcorporate@wnkcorporate.com.br · wnkcorporate@gmail.com
 - **Site:** www.wnkcorporate.com.br
-- **Instagram:** instagram.com/wnkcorporate.com.br · **Facebook:** facebook.com/consultorimoveiswnk
+- **Instagram:** instagram.com/wnkcorporate.com.br · **Facebook:** https://www.facebook.com/share/19hZyTokH6/?mibextid=wwXIfr
 - **Razão social:** WNK Corporate Gestão de Imóveis LTDA · CNPJ 20.929.539/0001-37 · CRECI 32.390-J
 
 ### 1.4 Pontos de atenção encontrados (validar antes de publicar)

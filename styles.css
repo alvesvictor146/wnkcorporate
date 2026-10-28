@@ -67,7 +67,7 @@
   --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.7);
   --shadow-gold: 0 10px 30px rgba(201, 166, 107, 0.2);
 
-  --hero-overlay: linear-gradient(180deg, rgba(7, 13, 24, 0.75) 0%, rgba(7, 13, 24, 0.4) 50%, #070D18 100%);
+  --hero-overlay: linear-gradient(180deg, rgba(7, 13, 24, 0.35) 0%, rgba(7, 13, 24, 0.08) 45%, rgba(7, 13, 24, 0.55) 100%);
   --marquee-fade: linear-gradient(90deg, #070D18 0%, transparent 15%, transparent 85%, #070D18 100%);
 }
 
@@ -617,18 +617,23 @@ ul, ol {
   overflow: hidden;
 }
 
-.hero-img {
+.hero-img,
+.hero-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center right;
-  transform: scale(1.05);
-  filter: contrast(1.08) brightness(0.85);
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1.04);
+  filter: contrast(1.02) brightness(0.96);
   transition: filter var(--transition-normal);
 }
 
-[data-theme="light"] .hero-img {
-  filter: contrast(0.95) brightness(0.92) saturate(0.9);
+[data-theme="light"] .hero-img,
+[data-theme="light"] .hero-video {
+  filter: contrast(0.95) brightness(0.82) saturate(0.9);
 }
 
 .hero-overlay {
@@ -656,7 +661,7 @@ ul, ol {
 .hero-content {
   position: relative;
   z-index: 4;
-  max-width: 820px;
+  max-width: 980px;
 }
 
 .hero-badge {
@@ -687,19 +692,19 @@ ul, ol {
 
 .hero-title {
   font-family: var(--font-serif);
-  font-size: clamp(2.6rem, 5.5vw, 4.4rem);
+  font-size: clamp(3rem, 6.2vw, 5.2rem);
   font-weight: 600;
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
-  letter-spacing: -0.01em;
+  line-height: 1.08;
+  margin-bottom: 1.75rem;
+  letter-spacing: -0.015em;
 }
 
 .hero-desc {
-  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
   color: var(--text-secondary);
-  line-height: 1.7;
-  margin-bottom: 2.5rem;
-  max-width: 720px;
+  line-height: 1.75;
+  margin-bottom: 0;
+  max-width: 820px;
 }
 
 .hero-ctas {
@@ -1826,7 +1831,7 @@ ul, ol {
 }
 
 /* ==========================================================================
-   LIDERANÇA & DIREÇÃO TÉCNICA (RODRIGO PAPP LOPES)
+   LIDERANÇA & DIREÇÃO EXECUTIVA (RODRIGO SOLLA)
    ========================================================================== */
 .leadership-section {
   background: var(--bg-surface);

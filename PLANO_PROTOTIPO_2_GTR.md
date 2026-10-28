@@ -110,7 +110,7 @@ O novo protótipo será construído como uma experiência completa, aplicando 10
   - **SERVIÇOS:** BTS, Sale & Leaseback, Arquitetura, M&A, Valuation, Securitização & CRI.
   - **COBERTURA:** São Paulo - SP · Atendimento Corporativo em todo o Brasil e no Exterior.
   - **CONTATO:** WhatsApp: +55 (11) 95580-5749 · E-mails: wnkcorporate@wnkcorporate.com.br · wnkcorporate@gmail.com.
-- Redes sociais, razão social completa (`WNK Corporate Gestão de Imóveis LTDA`), CNPJ e CRECI.
+- Redes sociais, razão social completa (`WNK Corporate Gestão de Imóveis`), CNPJ e CRECI.
 
 ---
 

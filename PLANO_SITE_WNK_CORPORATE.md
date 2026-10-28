@@ -60,7 +60,7 @@
 - **E-mails:** wnkcorporate@wnkcorporate.com.br · wnkcorporate@gmail.com
 - **Site:** www.wnkcorporate.com.br
 - **Instagram:** instagram.com/wnkcorporate.com.br · **Facebook:** https://www.facebook.com/share/19hZyTokH6/?mibextid=wwXIfr
-- **Razão social:** WNK Corporate Gestão de Imóveis LTDA · CNPJ 20.929.539/0001-37 · CRECI 32.390-J
+- **Razão social:** WNK Corporate Gestão de Imóveis · CNPJ 20.929.539/0001-37 · CRECI 32.390-J
 
 ### 1.4 Pontos de atenção encontrados (validar antes de publicar)
 
@@ -274,7 +274,7 @@ O conteúdo fica em JSON (serviços, ativos, países e clientes), o que facilita
 ## 8. Definições e Alinhamento com o Cliente
 
 1. **Endereço físico:** **Não incluir endereço físico.** O site adota cobertura institucional ampla: *"Atendimento em todo o Brasil e no Exterior"*, evitando vincular localidade fixa provisória.
-2. **Razão social:** **Atualizada.** Razão social oficial: `WNK Corporate Gestão de Imóveis LTDA` (CNPJ 20.929.539/0001-37 e CRECI 32.390-J).
+2. **Razão social:** **Atualizada.** Razão social oficial: `WNK Corporate Gestão de Imóveis` (CNPJ 20.929.539/0001-37 e CRECI 32.390-J).
 3. **LinkedIn:** **Botão adicionado.** Incluído nas barras de redes sociais (seção de contato e rodapé), configurado provisoriamente sem redirecionamento externo até fornecimento da URL final.
 4. **Foto executiva:** **Monograma mantido.** Seção de liderança utiliza monograma executivo `RPL` com credenciais oficiais (CRECI 63.893-F / CAU A136977-6 / CREA 260562967-8). A foto em estúdio será inserida após aprovação do cliente.
 5. **Hospedagem & Domínio:** O domínio `wnkcorporate.com.br` está registrado, mas o cliente não tem acesso ao painel de hospedagem atual. Será configurada uma nova infraestrutura (Vercel, Cloudflare Pages ou Netlify) e o DNS será apontado pelo Registro.br assim que o acesso for recuperado ou transferido.

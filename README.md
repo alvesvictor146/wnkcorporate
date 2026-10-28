@@ -46,9 +46,9 @@ wnkcorporate/
 
 ## 🏢 Dados Institucionais
 
-- **Razão Social:** WNK Corporate Gestão de Imóveis LTDA
+- **Razão Social:** WNK Corporate Gestão de Imóveis
 - **CNPJ:** 20.929.539/0001-37
 - **CRECI:** 32.390-J
-- **Responsável Técnico:** Rodrigo Papp Lopes (CRECI 63.893-F · CAU A136977-6 · CREA 260562967-8)
+- **Liderança & Direção Executiva:** Rodrigo Solla
 - **WhatsApp:** +55 11 95580-5749
 - **E-mail:** wnkcorporate@wnkcorporate.com.br
